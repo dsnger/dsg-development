@@ -1,0 +1,24 @@
+// - _page-forms.sass
+
+.page-forms
+  main
+    background-color: transparent
+    box-shadow: none
+    padding: 0
+    margin: 0 $base-spacing
+    @include container(1200px)
+
+    .dropdown-content
+      [type="checkbox"] + label::before,
+      [type="checkbox"]:not(.filled-in) + label::after
+        margin-top: 10px
+
+    @include with-layout(outside)
+      section
+        margin-top: $small-spacing
+        padding: 40px
+        background-color: rgba(255,255,255,0.7)
+        box-shadow: 0px 2px 10px rgba(0,0,0,0.1)
+        @include span(6)
+        &:last-child
+          @include span(6 last)

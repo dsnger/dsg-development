@@ -1,0 +1,29 @@
+
+section.flipcards
+  overflow: visible
+  min-height: 11em
+  //height: 100%
+
+.flip-card
+  cursor: pointer
+  height: auto
+
+
+  .front,
+  .back
+    width: 100%
+    padding: 1em
+
+
+  .front
+    height: 5em
+    background-color: transparent
+    transition: height .2s ease-out
+    //&:hover
+      box-shadow: $base-box-shadow
+
+  .back
+    height: auto
+    transition: height .4s ease-in
+    background-color: transparent
+    box-shadow: $base-box-shadow
