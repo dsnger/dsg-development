@@ -1,0 +1,28 @@
+//Mixin Button Colors
+=button-color($btncolor, $btncolorh: $btncolor, $txtcolor: $white, $txtcolorh: $txtcolor)
+  background-color: $btncolor
+  border: 1px solid $btncolor
+  color: $txtcolor
+
+  &:hover,
+  &:focus
+    background-color: $btncolorh
+    color: $txtcolorh
+    border-color: $btncolorh
+    outline: 0
+
+  &.waves-btncolor .waves-ripple
+    +waves-btncolor(darken($btncolorh, 30%))
+
+//Mixin Wave Button Colors
+=waves-btncolor($btncolor)
+  +waves-color($btncolor)
+
+
+//Font Size - using REM: rem to px fallback
+=font-size($sizeValue: 1)
+  font-size: $sizeValue * 16 + px
+  font-size: $sizeValue + rem
+
+=base-font-size()
+  +font-size(1)

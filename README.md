@@ -1,21 +1,34 @@
 # dsg_homepage_v1
 
 
-Browser support
+|| Browser support
 https://modernizr.com/docs
+Picturefill (Support of <picture> and srcset Elements)
 
-Preloading?
+
+|| Loading Speed
+Lazyload (loading elements/images only if they are in view)
+
+
+
+|| Animation
+AOS (animate on scroll)
+Waypoints (Set scroll marks)
+
+
+|| Preloading?
 https://tympanus.net/Tutorials/PagePreloadingEffect/index.html
 
 
-Header
+|| Header sticky
 Logo und Hamburger Menu
 Telefon und E-Mail
 Größe ändern nach Scrollen
 https://tympanus.net/Blueprints/AnimatedHeader/
 
-Navigation
+|| Navigation
 über Hamburgermenu rechts, FullScreen Overlay
+css-hamburgers (animated css hamburgerstyles)
 https://tympanus.net/Development/FullscreenOverlayStyles/index8.html
 
 

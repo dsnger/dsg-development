@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <title>DSG Development</title>
+    <meta charset="utf-8">
+    <meta description="Development">
+    <meta keywords="Testing">
+    <meta author="Daniel Sänger Graphics">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="temp/styles/styles.css">
+    <script src="temp/scripts/Vendor.js"></script>
+  </head>
+  <body class="page-home">
+    <!--wrapper for whole site -->
+    <button class="hamburger hamburger--squeeze" id="hamburger__trigger-overlay" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+    <div class="site-wrapper">
+      <header class="site-header">
+        <div class="wrapper">
+          <div class="site-header__logo"><a href="index.html">
+              <div class="site-header__logo__graphic"><img src="assets/img/logo.svg" alt="Hier ist das Logo" title="Homepage">Firmenname Logo</div></a></div>
+          <div class="site-header__menu-content"> 
+            <div class="site-header__features"> <a class="button button--outline button--small">Hallo</a></div>
+            <nav class="primary-nav primary-nav--pull-right">
+              <ul>
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="large-hero">
+          <picture>
+            <source data-srcset="assets/img/hero--large-i.jpg 1920w, assets/img/hero--large-hi-dpi-i.jpg 3840w" media="(min-width: 1380px)">
+            <source data-srcset="assets/img/hero--medium-i.jpg 1380w, assets/img/hero--medium-hi-dpi-i.jpg 2760w" media="(min-width: 990px)">
+            <source data-srcset="assets/img/hero--small-i.jpg 990w, assets/img/hero--small-hi-dpi-i.jpg 1980w" media="(min-width: 640px)"><img class="large-hero__image lazyload" src="assets/img/hero--smaller-i.jpg" alt="Coastal view of ocean and mountains">
+          </picture>
+          <div class="large-hero__text-content">
+            <div class="wrapper">
+              <h1 class="large-hero__title">Here is the title</h1>
+              <h2 class="large-hero__subtitle">and here the subtitle</h2>
+              <p class="large-hero__description">We create websites for fun and information.</p><a class="button">Get Started Today</a>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p>Hier ist der Footer</p>
+        <!--primary-nav in site overlay-->
+      </footer>
+    </div>
+    <div class="nav-overlay nav-overlay--contentpush">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Clients</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+  <script src="temp/scripts/App.js"></script>
+</html>

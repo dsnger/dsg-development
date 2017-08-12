@@ -1,0 +1,68 @@
+=showGrid ()
+  background: susy-svg-grid() no-repeat scroll
+
+body
+.logo
+  width: 30%
+
+.page-container
+
+main
+  width: span(12)
+  +showGrid
+
+//Hamburger Menu - more configuration under 1-tools/hamburgers
+.hamburger
+  position: absolute
+  top: $small-spacing
+  right: $base-spacing
+  z-index: 1000
+  visibility: visible
+
+  &.is-active
+    .hamburger-inner::after, .hamburger-inner::before
+      background-color: $white
+
+.topheader
+  text-align: right
+  +base-font-size()
+  .phone
+    margin-top: 20px
+    position: absolute
+    top: $small-spacing
+    right: 10 * $base-spacing
+    z-index: 1000
+  .button-email
+    margin-top: 15px
+    position: absolute
+    top: $small-spacing
+    right: 6 * $base-spacing
+    z-index: 1000
+
+.flipcards
+  width: span(12)
+  margin: 0 span(1 wide)
+  background: grey
+
+.flip-card
+  width: span(3 wide)
+  background: blue
+  margin: 0  gutter()
+  height: 5em
+  float: left
+
+
+
+
+
+
+
+.stripes
+  position: absolute
+  bottom: 0
+  height: 2em
+  right: 0
+  left: 0
+  color: $brand
+  background-size: 7px 7px !important
+  +background-image(linear-gradient(-45deg, transparent 46%, $brand 49%, $brand 51%, transparent 55%))

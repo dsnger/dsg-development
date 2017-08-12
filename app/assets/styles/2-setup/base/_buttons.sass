@@ -1,0 +1,84 @@
+#{$all-buttons},.button:not(.hamburger)
+  &.hamburger
+    &:focus
+      outline: none
+  &:not(.hamburger)
+    //position: relative
+    appearance: none
+    background-color: $brand
+    border: 2px solid $brand
+    border-radius: $base-border-radius +1
+    color: white
+    cursor: pointer
+    display: inline-block
+    font-family: $base-font-family
+    +font-size(1)
+    letter-spacing: .1em
+    font-weight: 600
+    //height: $base-spacing * 2
+    line-height: $base-spacing * 2
+    padding: 0 ($base-spacing * 1.2)
+    text-align: center
+    text-decoration: none
+    text-transform: uppercase
+    transition: all $base-duration $base-timing
+    user-select: none
+    vertical-align: baseline
+    white-space: nowrap
+    //margin-top: $base-spacing
+    box-shadow: 0 0.3em 0 $brand-secondary
+
+    &:hover,
+    &:focus,
+    .button--click
+      background-color: darken($action-color, 3%)
+      color: $white
+      border-color: darken($action-color, 3%)
+      outline: none
+
+    &:active
+      transform: scale(.98)
+      //line-height: $base-spacing * 1.8
+      box-shadow: 0 0.1em 0 $brand-secondary
+      //box-shadow: inset 0 0.2em 0 $brand-secondary
+
+    &:disabled
+      cursor: not-allowed
+      opacity: 0.5
+      &:hover
+        background-color: $action-color
+
+    //button sizes
+    &.button--large
+      +font-size(1.1)
+
+    &.button--small
+      +font-size(.8)
+      border-radius: $base-border-radius - 2
+      line-height: $base-spacing * 1.4
+      padding: 0 ($base-spacing * 1)
+
+    &.button--light
+      border: none
+      background: transparent
+      color: $brand
+      &:hover
+        background-color: transparent
+        color: $brand
+
+    &.button--outline
+      border: 2px solid $brand
+      background-color: transparent
+      color: $brand
+      font-weight: 600
+      box-shadow: none
+      transition: background-color $base-duration $base-timing
+      &:hover,
+      &:focus
+        background-color: transparent
+        color: darken($action-color, 10%)
+        border-color: darken($action-color, 10%)
+        outline: 0
+      &:active
+        background-color: rgba($brand, 0.9)
+        color: white

@@ -1,0 +1,85 @@
+doctype html
+html(lang="de")
+  head
+    title DSG Development
+    meta(charset="utf-8")
+    meta(description="Development")
+    meta(keywords="Testing")
+    meta(author="Daniel Sänger Graphics")
+    meta(property="og:title", content="")
+    meta(property="og:description", content="")
+    meta(property="og:image", content="")
+    meta(property="og:url", content="")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="shortcut icon", href="img/favicons/favicon.ico")
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(rel="stylesheet", href="temp/styles/styles.css")
+    script(src="temp/scripts/Vendor.js")
+
+  body.page-home
+    //wrapper for whole site 
+    button#hamburger__trigger-overlay.hamburger.hamburger--squeeze(type='button')
+      span.hamburger-box
+        span.hamburger-inner
+        
+    .site-wrapper
+      header.site-header
+        .wrapper
+          .site-header__logo
+            a(href="index.html")
+              .site-header__logo__graphic
+                img(src="assets/img/logo.svg", alt="Hier ist das Logo", title="Homepage") 
+                | Firmenname Logo
+      
+          .site-header__menu-content 
+            .site-header__features 
+              a.button.button--outline.button--small Hallo
+            
+            nav.primary-nav.primary-nav--pull-right
+              ul
+                li
+                  a(href="#") Menu 1
+                li
+                  a(href="#") Menu 2
+      
+      main
+        section.large-hero
+          picture
+            source(data-srcset="assets/img/hero--large-i.jpg 1920w, assets/img/hero--large-hi-dpi-i.jpg 3840w", media="(min-width: 1380px)")
+            source(data-srcset="assets/img/hero--medium-i.jpg 1380w, assets/img/hero--medium-hi-dpi-i.jpg 2760w", media="(min-width: 990px)")
+            source(data-srcset="assets/img/hero--small-i.jpg 990w, assets/img/hero--small-hi-dpi-i.jpg 1980w", media="(min-width: 640px)")
+            img.large-hero__image.lazyload(src="assets/img/hero--smaller-i.jpg", alt="Coastal view of ocean and mountains")
+          
+          .large-hero__text-content
+            .wrapper
+              h1.large-hero__title Here is the title
+              h2.large-hero__subtitle and here the subtitle
+              p.large-hero__description We create websites for fun and information.
+              
+              a.button Get Started Today
+    
+      footer
+        p Hier ist der Footer
+      
+        //primary-nav in site overlay
+    .nav-overlay.nav-overlay--contentpush
+      nav
+        ul
+          li
+            a(href='#') Home
+          li
+            a(href='#') About
+          li
+            a(href='#') Work
+          li
+            a(href='#') Clients
+          li
+            a(href='#') Contact
+
+    
+  
+  
+  script(src="temp/scripts/App.js")
+
+
+  

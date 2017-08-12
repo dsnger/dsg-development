@@ -41,15 +41,21 @@
         <section class="vertical flipcards" id="grid3d">
           <div class="grid-wrap">
             <div class="grid">
-              <article class="flip-card" id="first" ontouchstart="this.classList.toggle('hover');">
+              <article class="overlay-grid-item flip-card" id="first" ontouchstart="this.classList.toggle('hover');">
                 <div class="front">Hallo</div>
-                <div class="back">Rückseite</div>
+                <div class="back">Rückseite
+                  <h3>Rückseite</h3>
+                  <button class="open-content">open</button>
+                </div>
               </article>
-              <article class="flip-card" id="secondary-background-color" ontouchstart="this.classList.toggle('hover');">
+              <article class="overlay-grid-item flip-card" id="secondary" ontouchstart="this.classList.toggle('hover');">
                 <div class="front">Hallo</div>
-                <div class="back">Rückseite</div>
+                <div class="back">Rückseite
+                  <h3>Rückseite</h3>
+                  <button class="open-content">open</button>
+                </div>
               </article>
-              <article class="flip-card" id="third" ontouchstart="this.classList.toggle('hover');">
+              <article class="overlay-grid-item flip-card" id="third" ontouchstart="this.classList.toggle('hover');">
                 <div class="front">Hallo</div>
                 <div class="back"> 
                   <h3>Rückseite</h3>
@@ -58,12 +64,17 @@
               </article>
             </div>
           </div>
-          <div class="content">
+          <div class="content" data-content-for="thirddd">
             <div>
+              <h1>third</h1>
               <p>The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
               <p>The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
-            </div>
+            </div><span class="loading"></span>
+            <button class="close-content"></button>
+          </div>
+          <div class="content" data-content-for="first">
             <div>
+              <h1>first</h1>
               <p>The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
               <p>The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
             </div><span class="loading"></span>

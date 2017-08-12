@@ -1,0 +1,12 @@
+//Grid Setting sass map
+//$susy: (columns: 12, gutters: 1/4, math: fluid, output: float, gutter-position: split, global-box-sizing: border-box)
+$susy: (
+  'columns': susy-repeat(12),
+  'gutters': 0.25,
+  'spread': 'narrow',
+  'container-spread': 'narrow',
+  'svg-grid-colors': hsl(180, 50%, 80%),
+);
+
+//Grid Setting shorthand
+//$shorthand: 12 1/4 fluid float outside

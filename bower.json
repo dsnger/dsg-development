@@ -1,0 +1,39 @@
+{
+  "name": "dsg_homepage_v1",
+  "homepage": "https://github.com/dsnger/dsg-development",
+  "authors": [
+    "Daniel <dsnger@arcor.de>"
+  ],
+  "description": "dsg homepage",
+  "main": "index.html",
+  "keywords": [
+    "website"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "materialize": "^0.100.1",
+    "bourbon": "^4.3.4",
+    "susy": "^3.0.0",
+    "breakpoint-sass": "^2.7.1",
+    "css-hamburgers": "^0.9.1",
+    "lazyload": "^3.2.2",
+    "waypoints": "^4.0.1",
+    "aos": "^2.2.0",
+    "picturefill": "^3.0.3",
+    "gulp": "^3.9.1",
+    "modernizr": "^3.5.0",
+    "lazysizes": "^3.0.0",
+    "juice": "^1.0.1"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "normalize-css": "^7.0.0"
+  }
+}

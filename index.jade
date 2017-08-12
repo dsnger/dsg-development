@@ -26,29 +26,41 @@ html(lang="de")
         section#grid3d.vertical.flipcards
           .grid-wrap
             .grid
-              article#first.flip-card(ontouchstart="this.classList.toggle('hover');")
+              article#first.overlay-grid-item.flip-card(ontouchstart="this.classList.toggle('hover');")
                 .front Hallo
                 .back Rückseite
-              article#secondary-background-color.flip-card(ontouchstart="this.classList.toggle('hover');")
+                  h3 Rückseite
+                  button.open-content open
+              article#secondary.overlay-grid-item.flip-card(ontouchstart="this.classList.toggle('hover');")
                 .front Hallo
                 .back Rückseite
-              article#third.flip-card(ontouchstart="this.classList.toggle('hover');")
+                  h3 Rückseite
+                  button.open-content open
+              article#third.overlay-grid-item.flip-card(ontouchstart="this.classList.toggle('hover');")
                 .front Hallo
                 .back 
                   h3 Rückseite
                   button.open-content open
             
-          .content
+          .content(data-content-for="thirddd")
             div
+              h1 third
               p
                 | The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.
               p
                 | The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.
+          
+            span.loading
+            button.close-content
+          
+          .content(data-content-for="first")
             div
+              h1 first
               p
                 | The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.
               p
                 | The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.
+          
             span.loading
             button.close-content
                   
