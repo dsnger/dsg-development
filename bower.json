@@ -30,7 +30,8 @@
     "gulp": "^3.9.1",
     "modernizr": "^3.5.0",
     "lazysizes": "^3.0.0",
-    "juice": "^1.0.1"
+    "juice": "^1.0.1",
+    "flip": "^1.1.2"
   },
   "dependencies": {
     "jquery": "^3.2.1",

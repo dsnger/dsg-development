@@ -1,3 +1,8 @@
+
+//show susy grid, requires susy
+=showGrid ()
+  background: susy-svg-grid() no-repeat scroll
+
 //Mixin Button Colors
 =button-color($btncolor, $btncolorh: $btncolor, $txtcolor: $white, $txtcolorh: $txtcolor)
   background-color: $btncolor
@@ -26,3 +31,45 @@
 
 =base-font-size()
   +font-size(1)
+
+//give a px fallback for vh. scaling a font-size from small to large viewport
+=breakpointFontScale ($fontsize, $fontsize-vh: false)
+  font-size: $fontsize
+  @if $fontsize-vh
+    font-size: $fontsize-vh
+  +breakpoint($phone-l)
+    font-size: $fontsize * 1.05
+    @if $fontsize-vh
+      font-size: $fontsize-vh
+  +breakpoint($tablet-l)
+    font-size: $fontsize * 1.2
+    @if $fontsize-vh
+      font-size: $fontsize-vh
+  +breakpoint($desktop)
+    font-size: $fontsize * 1.5
+    @if $fontsize-vh
+      font-size: $fontsize-vh
+
+
+
+//responsive circle - add to selector. circle needs inner div element
+=responsiveCircle($circle-width, $circle-color, $color, $font-size: 5vw, $font-fallback: 3em, $max-font-size: 4.5em)
+  width: $circle-width
+  &:after
+    content: ''
+    display: block
+    width: 100%
+    height: 0
+    background: $circle-color
+    border-radius: 50%
+    padding-bottom: 100%
+  >div
+    color: $color
+    width: 100%
+    +breakpointFontScale ($font-fallback, $font-size)
+    //max font-size 4.5em
+    +breakpoint($desktop-l)
+      font-size: $max-font-size
+    text-align: center
+    +centerer
+    top: 46%

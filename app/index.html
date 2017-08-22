@@ -14,7 +14,6 @@
     <link rel="shortcut icon" href="img/favicons/favicon.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="temp/styles/styles.css">
-    <script src="temp/scripts/Vendor.js"></script>
   </head>
   <body class="page-home">
     <!--wrapper for whole site -->
@@ -46,13 +45,74 @@
             <div class="wrapper">
               <h1 class="large-hero__title">Here is the title</h1>
               <h2 class="large-hero__subtitle">and here the subtitle</h2>
-              <p class="large-hero__description">We create websites for fun and information.</p><a class="button">Get Started Today</a>
+              <p class="large-hero__description">We create websites for fun and information.</p><a class="button">Get Started Today        </a>
             </div>
           </div>
         </section>
+        <div class="wrapper"> 
+          <section class="flipcards__section gridoverlay__wrapper">
+            <div class="flipcards__container container gridoverlay">
+              <article class="flipcards__item gridoverlay__item" id="first">
+                <div class="flipcards__item__front"> 
+                  <div class="flipcards__item__icon-circle">
+                    <div class="circle--inner"><i class="icon fa fa-car"></i></div>
+                  </div>
+                  <h3>item 1</h3>
+                  <h3>Hallo, das ist die Vorderseite!</h3>
+                </div>
+                <div class="flipcards__item__back">
+                  <h3>Rückseite</h3>
+                  <button class="gridoverlay__content--opener">open content</button>
+                </div>
+              </article>
+              <article class="flipcards__item gridoverlay__item" id="second">
+                <div class="flipcards__item__front"> 
+                  <div class="flipcards__item__icon-circle">
+                    <div class="circle--inner"><i class="icon fa fa-car"></i></div>
+                  </div>
+                  <h3>item 2</h3>
+                  <h3>Hallo, das ist die Vorderseite!</h3>
+                </div>
+                <div class="flipcards__item__back">
+                  <h3>Rückseite</h3>
+                  <button class="gridoverlay__content--opener">open content</button>
+                </div>
+              </article>
+              <article class="flipcards__item gridoverlay__item" id="third">
+                <div class="flipcards__item__front">
+                  <div class="flipcards__item__icon-circle">
+                    <div class="circle--inner"><i class="icon fa fa-car"></i></div>
+                  </div>
+                  <h3>item 2</h3>
+                  <h3>Hallo, das ist die Vorderseite!</h3>
+                </div>
+                <div class="flipcards__item__back"> 
+                  <h3>Rückseite</h3>
+                  <button class="gridoverlay__content--opener">open content</button>
+                </div>
+              </article>
+            </div>
+            <div class="gridoverlay-content__content" data-content-for="third">
+              <div>
+                <h1>third</h1>
+                <p>The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
+                <p>The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
+              </div><span class="spinner--loading"></span>
+              <button class="gridoverlay__content--closer"></button>
+            </div>
+            <div class="gridoverlay-content__content" data-content-for="first">
+              <div>
+                <h1>first</h1>
+                <p>The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
+                <p>The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
+              </div><span class="loading"></span>
+              <button class="gridoverlay__content--closer">   </button>
+            </div>
+          </section>
+        </div>
       </main>
       <footer>
-        <p>Hier ist der Footer</p>
+        <p class="test">Hier ist der Footer</p>
         <!--primary-nav in site overlay-->
       </footer>
     </div>
@@ -68,5 +128,6 @@
       </nav>
     </div>
   </body>
+  <script src="temp/scripts/Vendor.js"></script>
   <script src="temp/scripts/App.js"></script>
 </html>

@@ -14,7 +14,6 @@ html(lang="de")
     link(rel="shortcut icon", href="img/favicons/favicon.ico")
     link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
     link(rel="stylesheet", href="temp/styles/styles.css")
-    script(src="temp/scripts/Vendor.js")
 
   body.page-home
     //wrapper for whole site 
@@ -55,11 +54,68 @@ html(lang="de")
               h1.large-hero__title Here is the title
               h2.large-hero__subtitle and here the subtitle
               p.large-hero__description We create websites for fun and information.
+              a.button Get Started Today        
+        
+        .wrapper  
+          section.flipcards__section.gridoverlay__wrapper
+            .flipcards__container.container.gridoverlay
+              article#first.flipcards__item.gridoverlay__item
+                .flipcards__item__front 
+                  .flipcards__item__icon-circle
+                    .circle--inner
+                      i.icon.fa.fa-car
+                  h3 item 1
+                  h3 Hallo, das ist die Vorderseite!
+                .flipcards__item__back
+                  h3 Rückseite
+                  button.gridoverlay__content--opener open content
               
-              a.button Get Started Today
-    
+              article#second.flipcards__item.gridoverlay__item
+                .flipcards__item__front 
+                  .flipcards__item__icon-circle
+                    .circle--inner
+                      i.icon.fa.fa-car
+                  h3 item 2
+                  h3 Hallo, das ist die Vorderseite!
+                .flipcards__item__back
+                  h3 Rückseite
+                  button.gridoverlay__content--opener open content
+              
+              article#third.flipcards__item.gridoverlay__item
+                .flipcards__item__front
+                  .flipcards__item__icon-circle
+                    .circle--inner
+                      i.icon.fa.fa-car
+                  h3 item 2
+                  h3 Hallo, das ist die Vorderseite!
+                .flipcards__item__back 
+                  h3 Rückseite
+                  button.gridoverlay__content--opener open content
+                  
+            .gridoverlay-content__content(data-content-for="third")
+              div
+                h1 third
+                p
+                  | The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.
+                p
+                  | The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.
+            
+              span.spinner--loading
+              button.gridoverlay__content--closer
+            
+            .gridoverlay-content__content(data-content-for="first")
+              div
+                h1 first
+                p
+                  | The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.
+                p
+                  | The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.
+            
+              span.loading
+              button.gridoverlay__content--closer    
+                  
       footer
-        p Hier ist der Footer
+        p.test Hier ist der Footer
       
         //primary-nav in site overlay
     .nav-overlay.nav-overlay--contentpush
@@ -78,7 +134,7 @@ html(lang="de")
 
     
   
-  
+  script(src="temp/scripts/Vendor.js")
   script(src="temp/scripts/App.js")
 
 

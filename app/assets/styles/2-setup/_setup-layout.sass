@@ -1,0 +1,57 @@
+/* all general site layout styles from here */
+
+//Grid Setting sass map
+$susy-columns: 12
+$susy: ('columns': susy-repeat($susy-columns), 'gutters': 0.5, 'spread': 'narrow', 'container-spread': 'narrow', 'svg-grid-colors': hsl(180, 50%, 80%))
+
+
+
+.wrapper
+  overflow: hidden
+  padding-left: $small-spacing
+  padding-right: $small-spacing
+  max-width: $desktop
+  margin-left: auto
+  margin-right: auto
+
+section
+  .wrapper
+    padding-top: $base-spacing
+    padding-bottom: $base-spacing
+
+
+/* helper */
+//margins for top and bottom of sections
+.spacer
+  margin: $base-spacing 0
+
+.spacer--large
+  margin: 2 * $base-spacing 0
+
+.spacer--huge
+  margin: 4 * $base-spacing 0
+
+.spacer-top
+  margin-top: $base-spacing
+
+.spacer-top--large
+  margin-top: 2 * $base-spacing
+
+.spacer-top--huge
+  margin-top: 4 * $base-spacing
+
+
+.container
+  background: susy-svg-grid() no-repeat scroll
+  //+clearfix
+  display: flex
+
+//mixin for making x columns in a row
+=column ($span: 4, $gutter: 12)
+  $cycle: $susy-columns / $span + n
+  width: span(4)
+  margin-right: gutter($gutter)
+  &:nth-child( #{$cycle} )
+    margin-right: 0
+  float: left
+  border: 2px solid red
